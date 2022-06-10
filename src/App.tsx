@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import {Tasks} from "./components/Tasks";
+import {Todolist} from "./components/Todolist";
+import "rsuite/dist/rsuite.min.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <h1>
         todos
-      </header>
-      <Tasks/>
+      </h1>
+      <Todolist/>
     </div>
   );
 }

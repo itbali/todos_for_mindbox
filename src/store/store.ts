@@ -1,10 +1,10 @@
 import {legacy_createStore as createStore,  combineReducers} from 'redux'
 import {appReducer} from "./appReducer";
-import {taskReducer} from "./todosReducer";
+import {tasksReducer} from "./tasksReducer";
 
 
 const rootReducer = combineReducers(
-  {appReducer,taskReducer}
+  {appReducer,tasksReducer}
 )
 export const store = createStore(rootReducer)
 export type AppRootStateType = ReturnType<typeof rootReducer>
